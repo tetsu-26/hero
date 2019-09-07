@@ -1,0 +1,10 @@
+.footer-sell-btn
+  .footer-sell-btn__wrapper.sell-btn
+    - if user_signed_in?
+      = link_to "/items/new" do
+        %div 出品
+        %i.fa.fa-camera
+    - else
+      = link_to new_user_session_path do
+        %div 出品
+        %i.fa.fa-camera
