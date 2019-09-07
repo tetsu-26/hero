@@ -1,0 +1,93 @@
+.container{
+  width: 700px;
+  background-color: #f8f9fa;
+  &--title{
+    h1{
+      padding: 32px 16px;
+      font-size: 22px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 1px;
+    }
+  }
+  &--main{
+    padding: 25px;
+    &__in{
+      padding-bottom: 30px;
+      .name-form{
+        font-size: 14px;
+        width: 100%;
+        height: 50px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 10px 16px 8px;
+      }
+      .description-form{
+        width: 100%;
+        min-height: 140px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 16px;
+      }
+    }
+    &__in2{
+      padding-bottom: 40px;
+      .local-form{
+        float: right;
+        font-size: 14px;
+        width: 500px;
+        height: 50px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 10px 16px 8px;
+      }
+      #item_state{
+        float: right;
+        height: 48px;
+        width: 240px;
+        padding: 0 16px;
+        border-radius: 4px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        -webkit-appearance: button;
+      }
+      .fa.fa-angle-down{
+        position: absolute;
+        top: 591px;
+        left: 1002px;
+        font-size: 17px;
+        color: #888;
+        pointer-events: none;
+        font-weight: bold;
+      }
+    }
+    &__in3{
+      margin-bottom: 6px;
+      .price-content{
+        float: right;
+        .price-form{
+          font-size: 14px;
+          width: 140px;
+          height: 50px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          padding: 10px 16px 8px;
+        }
+      }
+    }
+  }
+  &--button{
+    padding: 25px;
+    .btn-success{
+      width: 620px;
+      height: 50px;
+    }
+    .btn-secondary{
+      height: 26px;
+      text-align: center;
+      margin-top: 5px;
+      margin: 6px auto;
+    }
+  }
+}
