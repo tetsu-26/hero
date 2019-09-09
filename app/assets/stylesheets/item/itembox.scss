@@ -1,0 +1,46 @@
+.items-box{
+  width: 226px;
+  height: 340px;
+  margin: 15px;
+  background-color: #fff;
+  position: relative;
+  .sold-out{
+    position: absolute;
+    top: 3em;
+    left: -4em;
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .06em;
+    background-color: #28a745;
+    padding: 0.5em 5em 0.4em 5em;
+    text-shadow: 0 0 0.75em #444;
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+    font: bold 16px/1.2em Arial, Sans-Serif;
+    -webkit-text-shadow: 0 0 0.75em #444;
+    -webkit-box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+    -webkit-transform: rotate(-45deg) scale(0.75,1);
+    z-index: 2;
+  }
+  &--img{
+    .main-image{
+      width: 226px;
+      height: 226px;
+      border: double;
+      border-radius: 15px;
+      border-color: #333333;
+    }
+  }
+  &--in{
+    padding: 10px;
+    &__name{
+      font-size: 19px;
+      color: #333333;
+    }
+    &__price{
+      font-size: 24px;
+      color: #bf0000;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.wrapper{
+  max-width: 1024px;
+  min-height: calc( 100vh - 106px );
+  background-color: #f8f9fa;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .no_items{
+    margin: 10px auto;
+  }
+}
