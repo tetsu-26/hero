@@ -1,0 +1,36 @@
+<h1 class="tranzaction_title">商品取引</h1>
+<div class="line-bc"><!--①LINE会話全体を囲う-->
+  <!--②左コメント始-->
+  <div class="balloon6">
+    <div class="chatting">
+      <div class="says">
+        <p>例）食堂前に1月1日の18時でお願いします</p>
+      </div>
+    </div>
+  </div>
+  <!--②/左コメント終-->
+
+  <!--③右コメント始-->
+  <div class="mycomment">
+    <p>
+    例）了解です。<br>支払いは現金手渡しでよろしいですか？
+    </p>
+  </div>
+  <!--/③右コメント終-->
+  <div class="balloon6">
+    <div class="chatting">
+      <div class="says">
+        <p>例）大丈夫です。<br>よろしくお願いします</p>
+      </div>
+    </div>
+  </div>
+</div><!--/①LINE会話終了-->
+
+<div class="tranzaction_form" >
+  <%= form_for [@item, @tranzaction] do |f|%>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <%= f.hidden_field :item_id, value: params[:item_id] %>
+    <%= f.text_field :comment,class: "tranzaction_comment" %>
+    <%= f.button "送信",class: "btn-primary" %>
+  <% end %>
+</div>
