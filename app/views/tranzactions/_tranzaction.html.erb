@@ -1,0 +1,18 @@
+<% if @item.buyer_id==tranzaction.user_id%>
+  <div class="mycomment">
+    <p>
+      <%= tranzaction.comment %>
+    </p>
+  </div>
+<% elsif @item.user_id==tranzaction.user_id %>
+  <div class="balloon6">
+    <div class="chatting">
+      <div class="says">
+        <p>
+          <%= tranzaction.comment %>
+        </p>
+      </div>
+    </div>
+  </div>
+<% else %>
+<% end %>
