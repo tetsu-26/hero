@@ -1,2 +1,5 @@
 <%= render partial:"shared/header"%>
+<div class="wrapper">
+  <%= render partial:"itembox", collection: @items, as: 'item'%>
+</div>
 <%= render partial:"shared/sell-btn" %>
