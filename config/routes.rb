@@ -4,5 +4,8 @@ Rails.application.routes.draw do
   root 'items#index'
   resources :items do
     resources :tranzactions, only: [:index, :new, :create]
+    collection do 
+      get 'search'
+    end
   end
 end
