@@ -1,0 +1,9 @@
+<%= render partial:"shared/header"%>
+<div class="wrapper">
+  <% if @items.present? %>
+    <%= render partial:"itembox", collection: @items, as: 'item'%>
+  <% else %>
+    <h4 class="no_items">一致する商品は見つかりませんでした</h4>
+  <% end %>
+</div>
+<%= render partial:"shared/sell-btn" %>
