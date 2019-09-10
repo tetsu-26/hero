@@ -1,5 +1,5 @@
 class Item < ApplicationRecord
-  has_many :tranzactions
+  has_many :tranzactions, dependent: :destroy
   belongs_to :user
   mount_uploader :image, ImageUploader
 
